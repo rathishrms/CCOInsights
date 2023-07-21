@@ -1,9 +1,9 @@
 {
     "IsEncrypted": false,
     "Values": {
-        "organization": "servicescode",
-        "resourceGroup": "test",
+        "organization": "msazuredev",
+        "resourceGroup": "adodashboard",
         "storageAccount": "ccoadocontsta",
-        "pat": "<<ADOPAT>>"
+        "pat": "ryx4ssqzjhoz5byeyjejnfjibpxu2bu3yujubrhzqq73yhr4yx5q"
     }
 }

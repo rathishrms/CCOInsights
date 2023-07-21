@@ -2,7 +2,7 @@
 param name string = 'cco-ado-contributions'
 
 @description('Name of the sotrage account')
-param staname string = 'ccoadocontsta'
+param staname string = 'ccoadocontstarr'
 
 @description('Location where resources should be deployed')
 param location string = resourceGroup().location
