@@ -4,6 +4,6 @@
         "organization": "msazuredev",
         "resourceGroup": "adodashboard",
         "storageAccount": "ccoadocontstarr",
-        "pat": "ryx4ssqzjhoz5byeyjejnfjibpxu2bu3yujubrhzqq73yhr4yx5q"
+        "pat": "<<ADOPAT>>"
     }
 }
