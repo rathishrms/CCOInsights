@@ -31,7 +31,6 @@ jobs:
           resourceGroupName: ${{ github.event.inputs.resourceGroupName }}
           template: ./dashboards/ADODashboard-Contributors/infrastructure/deploy.bicep
       - name: "Set up Azure DevOps PAT secret"
-        uses: actions/checkout@v2
         env:
           ADOPAT: ${{ secrets.ADOPAT }}
       - name: "Show Azure DevOps PAT"
@@ -41,7 +40,7 @@ jobs:
         run: |
           $ConvertTokenListFunctionInput = @{
             FilePath   = './dashboards/ADODashboard-Contributors/src/local.settings.json'
-            TokenName  = '<<ADOPAT>>'
+            TokenName  = 'ADOPAT'
             TokenValue = $env:ADOPAT
           }
           ./tools/scripts/Convert-TokenInFile.ps1 @ConvertTokenListFunctionInput -Verbose   
