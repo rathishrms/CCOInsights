@@ -44,6 +44,8 @@ jobs:
         run: |
           # Initialize parameters
           Install-Module -Name Az.Functions -Force
+          $SubscriptionId = 'ed0288f4-2816-422d-b106-2c0ac6db7a44'
+          Connect-AzAccount -Subscription $SubscriptionId
           $functionApp = Get-AzFunctionApp -ResourceGroupName '${{ github.event.inputs.resourceGroupName }}'
           $functionAppName = $functionApp[0].Name
           $DeployFunctionInputs = @{
